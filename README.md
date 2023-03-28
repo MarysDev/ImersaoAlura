@@ -35,7 +35,8 @@
 
 ## Layout  :dash:
 
-![image](https://user-images.githubusercontent.com/127367305/228371854-f44a9c2b-14b1-4c39-a70b-52e1c4a943dd.png)
+![image](https://user-images.githubusercontent.com/127367305/228374134-8d55dc2f-fb60-4a45-b8b7-eb4fcd0d2c5c.png)
+
 
 
 
