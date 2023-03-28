@@ -35,7 +35,8 @@
 
 ## Layout  :dash:
 
-:warning: Em desenvolvimento
+![image](https://user-images.githubusercontent.com/127367305/228371854-f44a9c2b-14b1-4c39-a70b-52e1c4a943dd.png)
+
 
 
 ## Técnicas e tecnologias exercitadas :books:
