@@ -22,7 +22,7 @@
 
 <p align="justify">
   Projeto desenvolvido durante a Imersão Java, da plataforma Alura, com o objetivo de utilizar uma API externa para mostrar os filmes mais bem avaliados da IMDb.
-  Devido as instabilidades da IMDb, URLs alternativos foram oferecidos, a usada neste projeto foi a https://raw.githubusercontent.com/alura-cursos/imersao-java-2-api/main/TopMovies.json, 
+  Devido as instabilidades da IMDb, URLs alternativos foram oferecidos, a usada neste projeto foi a https://raw.githubusercontent.com/alura-cursos/imersao-java-2-api/main/TopMovies.json 
 </p>
 
 ## Funcionalidades
@@ -35,7 +35,9 @@
 
 ## Layout  :dash:
 
-:warning: Em desenvolvimento
+![image](https://user-images.githubusercontent.com/127367305/228374134-8d55dc2f-fb60-4a45-b8b7-eb4fcd0d2c5c.png)
+
+
 
 
 ## Técnicas e tecnologias exercitadas :books:
