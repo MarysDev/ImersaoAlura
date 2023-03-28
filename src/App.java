@@ -12,7 +12,7 @@ public class App {
 		// fazer uma conexão HTTP e buscar os top 250 filmes
 		
 		//String url = "https://raw.githubusercontent.com/alura-cursos/imersao-java-2-api/main/TopMovies.json";
-		String url = "https://raw.githubusercontent.com/alura-cursos/imersao-java-2-api/main/MostPopularMovies.json";
+		String url = "https://raw.githubusercontent.com/alura-cursos/imersao-java-2-api/main/TopMovies.json";
 		URI endereco = URI.create(url);
 		var client = HttpClient.newHttpClient();
 		
@@ -31,7 +31,15 @@ public class App {
 			System.out.println("\u001b[1mTítulo:\u001b[m " + filme.get("title"));
 			System.out.println("\u001b[1mPoster:\u001b[m " + filme.get("image"));
 			System.out.println("\u001b[46m \u001b[30mClassificação: " + filme.get("imDbRating") + " \u001b[m");
-			System.out.print("⭐");
+
+			//creates the stars, rounding the ratings to the nearest number
+			String ratingString = filme.get("imDbRating");
+			double ratingNumber = Double.parseDouble(ratingString);
+			int ratingRoundedUp = (int) Math.round(ratingNumber);
+			for(int i = 0; i < ratingRoundedUp; i ++){
+				System.out.print("⭐");
+			}
+			System.out.println(" ");
 			System.out.println(" ");
 
 			
