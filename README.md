@@ -13,11 +13,9 @@
 
 :small_blue_diamond: [Funcionalidades](#funcionalidades)
 
-:small_blue_diamond: [Deploy da Aplicação](#deploy-da-aplicação-dash)
+:small_blue_diamond: [Layout](#layout-dash)
 
-:small_blue_diamond: [Pré-requisitos](#pré-requisitos)
-
-:small_blue_diamond: [Como rodar a aplicação](#como-rodar-a-aplicação-arrow_forward)
+:small_blue_diamond: [Técnicas e tecnologias exercitadas](#técnicas-e-tecnologias-exercitadas-books)
 
 
 ## Descrição do projeto 
@@ -38,7 +36,6 @@
 ## Layout  :dash:
 
 :warning: Em desenvolvimento
-
 
 
 ## Técnicas e tecnologias exercitadas :books:
