@@ -2,16 +2,14 @@ import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
-
 import javax.imageio.ImageIO;
 
 public class GeradorDeFigurinhas {
   
-    public void cria() throws Exception{
+    public void cria() throws IOException{
       // leitura da imagem
 
-      BufferedImage imagemOriginal = ImageIO.read(new File("entrada/filme.jpeg"));
-
+      BufferedImage imagemOriginal = ImageIO.read(new File("entrada/filme.jpg"));
       // cria nova imagem em memória com transparência e com tamanho novo
 
       int largura = imagemOriginal.getWidth();
@@ -27,10 +25,10 @@ public class GeradorDeFigurinhas {
       // escreve uma frase na nova imagem
 
       // escrever a nova imagem em um arquivo
-      ImageIO.write(novaImagem, null, new File("saida/figurinha.png"));
+      ImageIO.write(novaImagem, "png", new File("saida/figurinha.png"));
     }
 
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) throws IOException {
       var geradora = new GeradorDeFigurinhas();
       geradora.cria();
     }
