@@ -1,5 +1,7 @@
 
+import java.io.InputStream;
 import java.net.URI;
+import java.net.URL;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
@@ -28,11 +30,22 @@ public class App {
 		//exibir e manipular os dados
 		
 		for (Map<String, String> filme : listaDeFilmes) {
-			System.out.println("\u001b[1mTítulo:\u001b[m " + filme.get("title"));
-			System.out.println("\u001b[1mPoster:\u001b[m " + filme.get("image"));
+			
+			String urlImagem = filme.get("image");
+			String titulo = filme.get("title");
+			String nomeArquivo = titulo.replace(":", "-") + ".png";
+			InputStream inputStream = new URL(urlImagem).openStream();
+			
+			var geradora = new GeradorDeFigurinhas();
+			geradora.cria(inputStream, nomeArquivo);
+
+			System.out.println("\u001b[1mTítulo:\u001b[m " + titulo);
+			System.out.println("\u001b[1mPoster:\u001b[m " + urlImagem);
 			System.out.println("\u001b[46m \u001b[30mClassificação: " + filme.get("imDbRating") + " \u001b[m");
+			
 
 			//criar as estrelas de acordo com a classificação do filme, arredondando os números
+			
 			String ratingString = filme.get("imDbRating");
 			double ratingNumber = Double.parseDouble(ratingString);
 			int ratingRoundedUp = (int) Math.round(ratingNumber);
